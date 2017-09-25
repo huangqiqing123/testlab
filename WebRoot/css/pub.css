@@ -1,0 +1,37 @@
+<!--
+body,td,th {
+	font-family:Arial;
+	font-size:14px;
+	color:blue;
+}
+fieldset{
+border: 1px solid #C1DAD7;
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #bfdaee; SCROLLBAR-HIGHLIGHT-COLOR: #95c4e7; SCROLLBAR-SHADOW-COLOR: #237dc3; SCROLLBAR-3DLIGHT-COLOR: #e9f2fa; SCROLLBAR-ARROW-COLOR: #ff9000; SCROLLBAR-TRACK-COLOR: #e9f2fa; SCROLLBAR-DARKSHADOW-COLOR: #ecf7fd
+}
+A:link {
+	COLOR: #660000; FONT-FAMILY: Arial,"MS Serif"; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #660000; FONT-FAMILY: Arial,"MS Serif"; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #660000; TEXT-DECORATION: none
+}
+A:hover {
+	 COLOR:red; TEXT-DECORATION: none;
+}
+.css_TR_move
+{
+background-color:#FFBD9D;
+}
+.css_tr_move_on{
+background-color:#FFBD9D;
+}
+.css_li
+{
+	FONT-SIZE: 15px
+}
+.btbox {{border-color:#00CC00;border-bottom-color:#006600 }
+--> 

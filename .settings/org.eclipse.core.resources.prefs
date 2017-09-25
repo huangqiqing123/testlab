@@ -1,0 +1,15 @@
+#Thu Mar 08 18:26:01 CST 2012
+eclipse.preferences.version=1
+encoding//WebRoot/css/pub.css=UTF-8
+encoding//WebRoot/doUpload.jsp=gbk
+encoding//WebRoot/js/ShowCalendar.js=gbk
+encoding//WebRoot/js/pub.js=gbk
+encoding//WebRoot/menu.jsp=gbk
+encoding//src/cn/sdfi/framework=gbk
+encoding//src/cn/sdfi/framework/bean/Model.java=UTF-8
+encoding//src/cn/sdfi/framework/db/TransactionManager.java=gbk
+encoding//src/cn/sdfi/tools/OnLineListener.java=UTF-8
+encoding//src/dbpool.properties=UTF-8
+encoding//src/enum.properties=GBK
+encoding//src/other.properties=gbk
+encoding/<project>=UTF-8

@@ -1,0 +1,17 @@
+		#suggest{
+			position:absolute;
+			z-index:100;
+			border:1px solid black;
+			font-size:13px;
+			background:white; 
+		}
+		.over{
+			border:1px solid white;
+			background:#e8eff7;
+			cursor:hand;
+		}
+		.out{
+			border:1px solid white;
+			background:white;
+			cursor:hand;
+		}

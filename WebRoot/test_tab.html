@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>我的滑动门</title>
+<style type="text/css">
+.nTab{
+float: left;
+width: 100%;
+margin: 0 auto;
+border-bottom:1px #AACCEE solid;
+background:#d5d5d5;
+background-position:left;
+background-repeat:repeat-y;
+margin-bottom:2px;
+}
+.nTab .TabTitle{
+clear: both;
+height: 22px;
+overflow: hidden;
+}
+.nTab .TabTitle ul{
+border:0;
+margin:0;
+padding:0;
+}
+.nTab .TabTitle li{
+float: left;
+width: 70px;
+cursor: pointer;
+padding-top: 4px;
+padding-right: 0px;
+padding-left: 0px;
+padding-bottom: 2px;
+list-style-type: none;
+font-size: 12px;
+text-align: center;
+margin: 0;
+}
+.nTab .TabTitle .active{background:#fff;border-left:1px #AACCEE solid;border-top:1px #AACCEE solid;border-right:1px #AACCEE solid;border-bottom:1px #fff solid;}
+.nTab .TabTitle .normal{background:#EBF3FB;border:1px #AACCEE solid;}
+.nTab .TabContent{
+width:auto;background:#fff;
+margin: 0px auto;
+padding:10px 0 0 0;
+border-right:1px #AACCEE solid;border-left:1px #AACCEE solid;
+}
+.none {display:none;}
+</style>
+<script type="text/javascript">
+function nTabs(thisObj,Num){
+if(thisObj.className == "active")return;
+var tabObj = thisObj.parentNode.id;
+var tabList = document.getElementById(tabObj).getElementsByTagName("li");
+for(i=0; i <tabList.length; i++)
+{
+if (i == Num)
+{
+   thisObj.className = "active"; 
+      document.getElementById(tabObj+"_Content"+i).style.display = "block";
+}else{
+   tabList[i].className = "normal"; 
+   document.getElementById(tabObj+"_Content"+i).style.display = "none";
+}
+} 
+}
+</script>
+</head>
+<body>
+<br/>
+<br/>
+<div align="center" style="padding-left:25px;">
+<!-- 选项卡0开始 -->
+<div class="nTab">
+    <!-- 标题开始 -->
+    <div class="TabTitle">
+      <ul id="myTab0">
+        <li class="active" onmouseover="nTabs(this,0);">全部</li>
+        <li class="normal" onmouseover="nTabs(this,1);">日志</li>
+        <li class="normal" onmouseover="nTabs(this,2);">咨询</li>
+        <li class="normal" onmouseover="nTabs(this,3);">相册</li>
+        <li class="normal" onmouseover="nTabs(this,4);">商城</li>
+        <li class="normal" onmouseover="nTabs(this,5);">社区</li>
+      </ul>
+    </div>
+    <!-- 内容开始 -->
+    <div class="TabContent">
+      <div id="myTab0_Content0"> 000 </div>
+      <div id="myTab0_Content1" class="none">111</div>
+      <div id="myTab0_Content2" class="none">222</div>
+      <div id="myTab0_Content3" class="none">333</div>
+      <div id="myTab0_Content4" class="none">444</div>
+      <div id="myTab0_Content5" class="none">555</div>
+    </div>
+</div>
+<!-- 选项卡0结束 -->
+<!-- 选项卡1开始 -->
+<div class="nTab" style=width:288px>
+    <!-- 标题开始 -->
+    <div class="TabTitle">
+      <ul id="myTab1">
+        <li class="active" onclick="nTabs(this,0);">aaa</li>
+        <li class="normal" onclick="nTabs(this,1);">bbb</li>
+        <li class="normal" onclick="nTabs(this,2);">ccc</li>
+        <li class="normal" onclick="nTabs(this,3);">单击</li>
+      </ul>
+    </div>
+    <!-- 内容开始 -->
+    <div class="TabContent">
+      <div id="myTab1_Content0"> 000 </div>
+      <div id="myTab1_Content1" class="none"> 111 </div>
+      <div id="myTab1_Content2" class="none"> 222 </div>
+      <div id="myTab1_Content3" class="none"> 333 </div>
+    </div>
+</div>
+<!-- 选项卡1结束 -->
+</div>
+</body>
+</html>
+
